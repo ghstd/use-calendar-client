@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+
+	<title>calendar</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<div class="wrap">
+		<div class="calendar">
+			<div class="calendar__header">
+				<div class="calendar__year"></div>
+				<div class="calendar__control-month">
+					<div class="calendar__buttons">
+						<button class="calendar__prev-btn">prev</button>
+						<button class="calendar__next-btn">next</button>
+					</div>
+					<div class="calendar__month"></div>
+				</div>
+			</div>
+			<div class="calendar__week">
+				<div class="calendar__day">Mon</div>
+				<div class="calendar__day">Tue</div>
+				<div class="calendar__day">Wed</div>
+				<div class="calendar__day">Thu</div>
+				<div class="calendar__day">Fri</div>
+				<div class="calendar__day">Sat</div>
+				<div class="calendar__day">Sun</div>
+			</div>
+			<div class="calendar__body"></div>
+		</div>
+		<div class="workspace">
+			<div class="scale">
+				<div class="scale__time"></div>
+				<div class="scale__lines"></div>
+			</div>
+			<div class="notes">
+				<div class="notes__header">
+					<button class="add">add</button>
+					<div class="notes__date"></div>
+				</div>
+				<div class="notes__body"></div>
+			</div>
+		</div>
+		<div class="week-tasks"></div>
+		<div class="important"></div>
+		<div class="login">
+			<div class="login__window">
+				<form class="login__form">
+					<input class="login__name" type="text" name="name">
+					<input class="login__password" type="text" name="password">
+					<div class="login__controls">
+						<label class="login__label" for="signin">Sign in</label>
+						<input class="login__radio" type="radio" id="signin" name="login-type" value="signin" checked>
+						<button class="login__submit" type="submit">Submit</button>
+						<input class="login__radio" type="radio" id="signup" name="login-type" value="signup">
+						<label class="login__label" for="signup">Sign up</label>
+					</div>
+				</form>
+			</div>
+			<div class="login__spinner">
+				<div class="spinner">
+					<div class="spinner-box swing">
+						<div class="spin-horizontal"></div>
+						<div class="spin-center"></div>
+						<div class="rect-1 spin-1">
+							<div class="sircle-1"></div>
+						</div>
+						<div class="rect-2 spin-2">
+							<div class="sircle-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="./index.js"></script>
+</body>
+
+</html>
